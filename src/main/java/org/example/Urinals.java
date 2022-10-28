@@ -82,6 +82,15 @@ public class Urinals {
     public static int getUrinals(String inputString) {
         char[] inputCharArr;
         inputCharArr = inputString.toCharArray();
+        if(inputCharArr.length==0){
+            return 0;
+        }
+        if(inputCharArr.length==1){
+            if(inputCharArr[0] == '1')
+                return 0;
+            else if(inputCharArr[0] == '0')
+                return 1;
+        }
         int urinalCount = 0;
         for (int i = 0; i < inputCharArr.length; i++) {
             if (i == 0 && inputCharArr[i] == '0' && inputCharArr[i + 1] == '0') {
