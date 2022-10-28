@@ -26,8 +26,8 @@ public class Urinals {
                     } else System.exit(2);
                 }
             } else if (inputChoice == 2) {
-                String[] fileNames = new String[100];
-                for(int i=0;i<100;i++){
+                String[] fileNames = new String[1000];
+                for(int i=0;i<1000;i++){
                     if(i==0){
                         fileNames[0] = "rule.txt";
                     }
@@ -41,7 +41,7 @@ public class Urinals {
                 String currentLine;
                 boolean flag = false;
                 String path  = "src/main/java/org/example/";
-                for(int i=0;i<100;i++){
+                for(int i=0;i<1000;i++){
                     File f = new File(path+fileNames[i]);
                     if(f.exists() && !f.isDirectory()) {
                         continue;
