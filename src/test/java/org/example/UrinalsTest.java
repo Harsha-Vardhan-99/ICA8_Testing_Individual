@@ -28,7 +28,12 @@ class UrinalsTest {
     @Test
     public void TestCase5() {
         System.out.println("======Harshavardhan Bodepudi======Test Case Five Executed====");
-        assertEquals(3,Urinals.getUrinals("10101111111000000001"));
+        assertEquals(-1,Urinals.getUrinals("10101111111000000001"));
+    }
+    @Test
+    public void TestCase6() {
+        System.out.println("======Harshavardhan Bodepudi======Test Case Six Executed====");
+        assertEquals(0,Urinals.getUrinals("1001"));
     }
 
 }
