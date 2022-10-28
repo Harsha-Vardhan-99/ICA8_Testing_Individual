@@ -13,7 +13,7 @@ class UrinalsTest {
     @Test
     public void TestCase2() {
         System.out.println("======Harshavardhan Bodepudi======Test Case Two Executed====");
-        assertEquals(0,Urinals.getUrinals("11"));
+        assertEquals(-1,Urinals.getUrinals("11"));
     }
     @Test
     public void TestCase3() {
@@ -23,7 +23,12 @@ class UrinalsTest {
     @Test
     public void TestCase4() {
         System.out.println("======Harshavardhan Bodepudi======Test Case Four Executed====");
-        assertEquals(0,Urinals.getUrinals("0"));
+        assertEquals(1,Urinals.getUrinals("0"));
+    }
+    @Test
+    public void TestCase5() {
+        System.out.println("======Harshavardhan Bodepudi======Test Case Five Executed====");
+        assertEquals(3,Urinals.getUrinals("10101111111000000001"));
     }
 
 }

@@ -80,6 +80,9 @@ public class Urinals {
     }
 
     public static int getUrinals(String inputString) {
+        if(!isValidString(inputString)){
+            return -1;
+        }
         char[] inputCharArr;
         inputCharArr = inputString.toCharArray();
         if(inputCharArr.length==0){
