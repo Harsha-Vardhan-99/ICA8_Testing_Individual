@@ -6,9 +6,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class UrinalsTest {
     @Test
-    public void TestCase() {
+    public void TestCase1() {
         System.out.println("======Harshavardhan Bodepudi======Test One Executed====");
-        assertEquals(3,Urinals.getUrinals("100001"));
+        assertEquals(2,Urinals.getUrinals("100001"));
+    }
+    @Test
+    public void TestCase2() {
+        System.out.println("======Harshavardhan Bodepudi======Test Two Executed====");
+        assertEquals(1,Urinals.getUrinals("11"));
     }
 
 }
