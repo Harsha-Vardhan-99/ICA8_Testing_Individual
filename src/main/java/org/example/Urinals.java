@@ -57,11 +57,11 @@ public class Urinals {
                     String output = "";
                     if(isValidString(currentLine)){
                         output = String.valueOf(getUrinals(currentLine));
-                        Files.write(Paths.get(path), output.getBytes(), StandardOpenOption.APPEND);
+                        Files.write(Paths.get(path), (output + "\n").getBytes(), StandardOpenOption.APPEND);
                     }
                     else{
                         output = "-1";
-                        Files.write(Paths.get(path), output.getBytes(), StandardOpenOption.APPEND);
+                        Files.write(Paths.get(path), (output + "\n").getBytes(), StandardOpenOption.APPEND);
                     }
                 };
             }
