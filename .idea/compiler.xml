@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ICA_Testing_Individual" />
+        <module name="ICA8_Testing_Individual" />
       </profile>
     </annotationProcessing>
   </component>

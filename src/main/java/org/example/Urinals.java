@@ -3,17 +3,20 @@ import java.util.*;
 
 public class Urinals {
     public static void main(String[] args) {
+        System.out.println("Enter your strings:");
         Scanner scn = new Scanner(System.in);
-        String inputString = scn.nextLine();
-        while(!inputString.equals("-1")){
-            if(isValidString(inputString)){
-                getUrinals(inputString);
+        while(scn.hasNext()){
+            String inputString = scn.nextLine();
+            if(!inputString.equals("-1")) {
+                if (isValidString(inputString)) {
+                    getUrinals(inputString);
+                } else {
+                    System.out.println("-1");
+                }
             }
-            else{
-                System.out.println("Invalid String");
+            else System.exit(2);
             }
         }
-    }
 
     private static boolean isValidString(String inputString) {
         if(inputString.contains("11")){
@@ -37,8 +40,7 @@ public class Urinals {
                 inputCharArr[i] = '1';
                 urinalCount++;
             }
-
-            System.out.println(urinalCount);
         }
+        System.out.println(urinalCount);
     }
 }
