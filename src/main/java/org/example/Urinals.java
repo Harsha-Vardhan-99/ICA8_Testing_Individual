@@ -9,7 +9,7 @@ public class Urinals {
             String inputString = scn.nextLine();
             if(!inputString.equals("-1")) {
                 if (isValidString(inputString)) {
-                    getUrinals(inputString);
+                    System.out.println(getUrinals(inputString));
                 } else {
                     System.out.println("-1");
                 }
@@ -18,14 +18,14 @@ public class Urinals {
             }
         }
 
-    private static boolean isValidString(String inputString) {
+    public static boolean isValidString(String inputString) {
         if(inputString.contains("11")){
             return false;
         }
         return true;
     }
 
-    private static void getUrinals(String inputString) {
+    public static int getUrinals(String inputString) {
         char[] inputCharArr;
         inputCharArr = inputString.toCharArray();
         int urinalCount = 0;
@@ -41,6 +41,6 @@ public class Urinals {
                 urinalCount++;
             }
         }
-        System.out.println(urinalCount);
+        return urinalCount;
     }
 }
